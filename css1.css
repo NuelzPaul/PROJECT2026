@@ -22,16 +22,18 @@ body{
 }
 
 header{
-    background-color: var(--red);
+    background-color: var(--green);
     color: #fff;
     text-align: center;
     border-bottom: 8px solid var(--gold);
     padding: 56px 5% 64px;
+    border-radius: 16px 16px 16px 16px;
+    border-top: 8px solid var(--gold);
 }
 
 main { padding: 40px 5% 72px; }
 
-a { color: var(--green); }
+a { color: var(--red); }
 
 a:hover { color: var(--link-hover); }
 
@@ -61,26 +63,45 @@ header p {
 }
 
 main {
-  padding: 0px;
+  padding: 24px 0;
+  background: var(--black);
 }
 
 .form-frame {
-  width: 100%;
+  width: calc(100% - 48px);
   height: 1200px;
-  border: 0;
-  background: #eaf7e4;
+  border: 8px solid var(--gold);
+  background: var(--green);
+  border-radius: 16px;
+  display: block;
+  margin-left: 24px;
 }
 
 .fallback {
     padding-left: 140px;
     font-size: 0.95rem;
-    color: #000;
+    color: #fff;
 }
 
 .fallback a {
   font-weight: 700;
 }
+
+.music {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: 520px;
+  object-fit: cover;
+  margin: 0 auto 24px;
+  border: 6px solid var(--gold);
+  border-radius: 46px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  margin-top: 24px;
 }
+
+}
+
 
 /* ---------- Meals page ---------- */
 header p { color: #fff; }
@@ -105,11 +126,22 @@ h2 {
   gap: 24px;
   max-width: 1000px;
   margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.extras {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .meal-card {
   background: #fff;
   border-radius: 16px;
+  border: 6px solid var(--gold);
   padding: 12px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
@@ -127,23 +159,27 @@ h2 {
   color: var(--red);
 }
 
-.extras {
-  text-align: center;
-  font-weight: 600;
-  margin-top: 24px;
-}
+
 main {
   padding: 0;
 }
 
 .meal-form {
-  width: 100%;
+  width: 700px;
   height: 1000px;
-  border: 0;
-  background: var(--red);
+  border: 8px solid var(--gold);
+  padding-left: 12px;
+  margin-left: 12px;
+  border-radius: 16px;
+  background: var(--green);
   margin-bottom: 24px;
+
 }
 
 .special-orders p {
     text-align: center;
+    margin-bottom: 24px;
+    color: var(--red);
+    font-weight: 600;
 }
+
